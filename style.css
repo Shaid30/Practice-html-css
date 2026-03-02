@@ -3,18 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: Arial,sans-serif;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #617ace;
+    background: rgb(23, 122, 168);
     padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .logo{
-    color: white;
     font-size: 22px;
+    color: white;
     font-weight: bold;
 }
+ul{
+    list-style: none;
+    display: flex;
+}
+ul li{
+    margin-left:45px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    transition: 0.3s;
+
+}
+ul li a:hover{
+    color: rgb(230, 203, 66);
+}
+
 ul{
     list-style: none;
     display: flex;
@@ -34,3 +59,60 @@ ul li a{
 ul li a:hover{
     color: rgb(225, 171, 64);
 }
+
+/*
+
+ul li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:2px;
+    background:#0fbcf9;
+    transition:0.3s;
+}
+
+ul li a:hover::after{
+    width:100%;
+}
+
+
+.active{
+    color:#0fbcf9;
+}
+
+.menu-toggle{
+    display:none;
+    color:white;
+    font-size:26px;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    ul{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#1e272e;
+        flex-direction:column;
+        display:none;
+        text-align:center;
+    }
+
+    ul li{
+        margin:15px 0;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    ul.active{
+        display:flex;
+    }
+}
+
+  */  
