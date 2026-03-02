@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #617ace;
+    padding: 15px 50px;
+}
+.logo{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+    display: flex;
+    
+}
+ul li{
+    margin-left: 40px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+
+
+}
+ul li a:hover{
+    color: rgb(225, 171, 64);
+}
