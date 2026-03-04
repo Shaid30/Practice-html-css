@@ -26,10 +26,15 @@ nav{
 ul{
     list-style: none;
     display: flex;
+    gap: 20px;
+    margin-right: 100px;
+
+
 
 }
 ul li{
-    margin-left: 16px;
+    margin-left: 19px;
+        
 }
 ul li a{
     text-decoration: none;
@@ -37,6 +42,9 @@ ul li a{
     color: rgb(243, 243, 244);
     position: relative;
     transition: 0.3s;
+    right: 50%;
+
+    
 }
 
 ul li a::after{
