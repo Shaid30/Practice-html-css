@@ -1,208 +1,84 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 body{
-    font-family: Arial, sans-serif;
+    font-family: Arial,sans-serif;
 }
-
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
     background:#1e272e;
-    padding:15px 50px;
-    position:sticky;
-    top:0;
-    z-index:1000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-
 .logo{
-    color:white;
-    font-size:22px;
-    font-weight:bold;
-}
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
 
+}
 ul{
-    list-style:none;
-    display:flex;
-}
+    list-style: none;
+    display: flex;
 
+}
 ul li{
-    margin-left:25px;
+    margin-left: 16px;
 }
-
 ul li a{
-    text-decoration:none;
-    color:white;
-    font-size:16px;
-    position:relative;
-    transition:0.3s;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(243, 243, 244);
+    position: relative;
+    transition: 0.3s;
 }
 
 ul li a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-5px;
-    width:0%;
-    height:2px;
-    background:#0fbcf9;
-    transition:0.3s;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: rgb(2, 172, 245);
+    transition: 0.3s;
 }
-
 ul li a:hover::after{
-    width:100%;
+    width: 100%;
 }
-
 .active{
-    color:#0fbcf9;
-}
-
-.menu-toggle{
-    display:none;
-    color:white;
-    font-size:26px;
-    cursor:pointer;
-}
-
-@media(max-width:768px){
-
-    ul{
-        position:absolute;
-        top:70px;
-        left:0;
-        width:100%;
-        background:#1e272e;
-        flex-direction:column;
-        display:none;
-        text-align:center;
-    }
-
-    ul li{
-        margin:15px 0;
-    }
-
-    .menu-toggle{
-        display:block;
-    }
-
-    ul.active{
-        display:flex;
-    }
-} 
-
-
-*/*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-}
-
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 50px;
-    position:fixed;
-    width:100%;
-    backdrop-filter: blur(12px);
-    background: rgba(255,255,255,0.08);
-    border-bottom:1px solid rgba(255,255,255,0.2);
-    transition:0.4s;
-}
-
-.logo{
-    color:white;
-    font-size:22px;
-    font-weight:bold;
-}
-
-ul{
-    list-style:none;
-    display:flex;
-    position:relative;
-}
-
-ul li{
-    margin-left:30px;
-}
-
-ul li a{
-    text-decoration:none;
-    color:white;
-    font-size:16px;
-    transition:0.3s;
-}
-ul li a:hover{
-    color:#00f2ff;
-    text-shadow:0 0 5px #00f2ff,
-                0 0 10px #00f2ff,
-                0 0 20px #00f2ff;
-}
-.indicator{
-    position:absolute;
-    bottom:-5px;
-    height:3px;
-    width:60px;
-    background:#00f2ff;
-    transition:0.3s;
+    color: rgb(94, 227, 227);
 }
 .menu-toggle{
-    display:none;
-    cursor:pointer;
-}
-
-.menu-toggle span{
-    display:block;
-    width:25px;
-    height:3px;
-    background:white;
-    margin:5px;
-    transition:0.3s;
-}
-
-.menu-toggle.active span:nth-child(1){
-    transform: rotate(45deg) translate(5px,5px);
-}
-
-.menu-toggle.active span:nth-child(2){
-    opacity:0;
-}
-
-.menu-toggle.active span:nth-child(3){
-    transform: rotate(-45deg) translate(5px,-5px);
+    display: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 @media(max-width:768px){
-
-    .menu-toggle{
-        display:block;
-    }
-
     ul{
-        position:absolute;
-        top:70px;
-        left:-100%;
-        width:100%;
-        background:#111;
-        flex-direction:column;
-        text-align:center;
-        padding:20px 0;
-        transition:0.4s;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #1e272e;
+        flex-direction: column;
+        display: none;
+        align-items: center;
     }
-
-    ul.active{
-        left:0;
-    }
-
     ul li{
-        margin:15px 0;
+        margin: 14px 0px;
     }
-} /*
+    .menu-toggle{
+        display: block;
+    }
+    ul.active{
+        display: flex;
+    }
+
+}
