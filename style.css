@@ -82,7 +82,7 @@ ul li a:hover::after{
 .login-btn{
     padding: 6px 15px;
     border: none;
-    background: #00ffff;
+    background: #578787;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -92,6 +92,56 @@ i{
     border-radius: 50%;
     cursor: pointer;
 }
+
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+}
+
+.hero-text{
+  max-width: 500px;
+}
+
+.hero-text h1{
+  font-size: 50px;
+}
+
+.hero-text p{
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.hero-text button{
+  padding: 12px 25px;
+  background: rgb(48, 48, 52);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.icon{
+    display: flex;
+    font-size: 10px;
+    margin-bottom:8px ;
+
+}
+
+button:hover{
+    transform:scale(1.1);
+    color: #00ffff;
+    cursor: pointer;
+}
+
+.hero-img img{
+  width: 400px;
+  transition: 0.5s;
+}
+.hero-img img:hover{
+transform:translateY(-15px);
+}
+
 @media(max-width:768px){
     ul{
         position: absolute;
@@ -114,3 +164,4 @@ i{
     }
 
 }
+
