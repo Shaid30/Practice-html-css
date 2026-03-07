@@ -82,9 +82,12 @@ ul li a:hover::after{
 .login-btn{
     padding: 6px 15px;
     border: none;
-    background: #578787;
+    background: #57bdbd;
     cursor: pointer;
     border-radius: 5px;
+}
+.login-btn:hover{
+    color: azure;
 }
 i{
     color: white;
@@ -93,53 +96,110 @@ i{
     cursor: pointer;
 }
 
-
 .hero{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px 10%;
+  position:relative;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 10%;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  color:white;
+  overflow:hidden;
 }
 
-.hero-text{
-  max-width: 500px;
+.hero-content{
+  max-width:500px;
 }
 
-.hero-text h1{
-  font-size: 50px;
+.hero-content h1{
+  font-size:50px;
+  margin-bottom:20px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  width:0;
+  animation: typing 3s steps(30, end) forwards;
 }
 
-.hero-text p{
-  margin: 20px 0;
-  font-size: 18px;
+.hero-content p{
+  margin-bottom:25px;
+  font-size:18px;
 }
 
-.hero-text button{
-  padding: 12px 25px;
-  background: rgb(48, 48, 52);
-  color: white;
-  border: none;
-  border-radius: 5px;
-}
-.icon{
-    display: flex;
-    font-size: 10px;
-    margin-bottom:8px ;
-
+.hero-content .btn{
+  padding:12px 30px;
+  border:none;
+  background:white;
+  color:#333;
+  font-size:16px;
+  cursor:pointer;
+  border-radius:30px;
+  transition:0.3s;
 }
 
-button:hover{
-    transform:scale(1.1);
-    color: #00ffff;
-    cursor: pointer;
+.hero-content .btn:hover{
+  transform:scale(1.1);
+  background:#ffcc00;
 }
 
+.social-icons{
+  margin-top:20px;
+  display:flex;
+  gap:15px;
+}
+
+.social-icons img{
+  width:30px;
+  transition:0.3s;
+}
+
+.social-icons img:hover{
+  transform:scale(1.2);
+}
+
+/* Hero Image */
 .hero-img img{
-  width: 400px;
-  transition: 0.5s;
+  width:350px;
+  transition:0.5s;
 }
+
 .hero-img img:hover{
-transform:translateY(-15px);
+  transform:translateY(-15px);
+}
+
+/* Typing Animation */
+@keyframes typing{
+  from{width:0;}
+  to{width:100%;}
+}
+
+/* Scroll Down Indicator */
+.scroll-down{
+  position:absolute;
+  bottom:30px;
+  left:50%;
+  transform:translateX(-50%);
+  width:30px;
+  height:50px;
+  border:2px solid white;
+  border-radius:25px;
+}
+
+.scroll-down span{
+  display:block;
+  width:6px;
+  height:6px;
+  margin:5px auto;
+  background:white;
+  border-radius:50%;
+  animation: scroll 1s infinite;
+}
+
+@keyframes scroll{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(20px);}
+  100%{transform:translateY(0);}
 }
 
 @media(max-width:768px){
