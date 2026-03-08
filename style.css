@@ -79,14 +79,14 @@ ul li a:hover::after{
     border: none;
     border-radius: 5px;
 }
-.login-btn{
+.loginBtn{
     padding: 6px 15px;
     border: none;
     background: #57bdbd;
     cursor: pointer;
     border-radius: 5px;
 }
-.login-btn:hover{
+.loginBtn:hover{
     color: azure;
 }
 i{
@@ -158,7 +158,6 @@ i{
   transform:scale(1.2);
 }
 
-/* Hero Image */
 .hero-img img{
   width:350px;
   transition:0.5s;
@@ -168,13 +167,11 @@ i{
   transform:translateY(-15px);
 }
 
-/* Typing Animation */
 @keyframes typing{
   from{width:0;}
   to{width:100%;}
 }
 
-/* Scroll Down Indicator */
 .scroll-down{
   position:absolute;
   bottom:30px;
@@ -224,4 +221,5 @@ i{
     }
 
 }
+
 
